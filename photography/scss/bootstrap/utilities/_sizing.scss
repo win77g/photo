@@ -1,0 +1,10 @@
+// Width and height
+
+@each $prop, $aphotographyrev in (width: w, height: h) {
+  @each $size, $length in $sizes {
+    .#{$aphotographyrev}-#{$size} { #{$prop}: $length !important; }
+  }
+}
+
+.mw-100 { max-width: 100% !important; }
+.mh-100 { max-height: 100% !important; }
